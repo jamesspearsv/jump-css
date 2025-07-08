@@ -1,6 +1,5 @@
 {
   "name": "jump-css",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "exports": "./dist/jump.min.css",
