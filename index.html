@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Starter CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/starter.css" />
+    <!-- <style>
+      /* Optional: minimal fallback for visually hidden utility */
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap;
+      }
+    </style> -->
+    <!-- Debugging Styles -->
+    <style>
+      body {
+        min-height: 200vh;
+        padding-inline: 1rem;
+        padding-top: 1rem;
+      }
+
+      div:has(nav) {
+        width: 90%;
+        padding: 1rem;
+        border: solid 1px black;
+      }
+
+      div:has(h6) * {
+        margin-block: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Starter CSS Framework</h1>
+
+    <br />
+    <h2>Navigation</h2>
+
+    <p>Left Aligned Navigation</p>
+    <div>
+      <nav>
+        <div>
+          <strong>Starter.css</strong>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p>Center Aligned Nav</p>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+          <strong>Starter.css</strong>
+        </ul>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <br />
+    <h2>Text</h2>
+    <div>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </div>
+
+    Inline Text Elements
+    <div>
+      <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+      <p><em>Lorem ipsum dolor sit amet.</em></p>
+      <p><s>Lorem ipsum dolor sit amet.</s></p>
+      <p><ins>Lorem ipsum dolor sit amet.</ins></p>
+      <p><del>Lorem ipsum dolor sit amet.</del></p>
+      <p><small>Lorem ipsum dolor sit amet.</small></p>
+    </div>
+  </body>
+</html>

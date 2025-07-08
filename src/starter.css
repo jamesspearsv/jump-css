@@ -1,0 +1,88 @@
+:root {
+  /** Color Properties */
+  --clr-dark-0: #343a40;
+  --clr-dark-1: #868e96;
+  --clr-light-0: #f8f9fa;
+  --clr-accent-0: #2f9e44;
+
+  /** Size Properties  */
+  --size-00: 0.75rem;
+  --size-0: 1rem;
+  --size-1: 1.25rem;
+  --size-2: 1.375rem;
+  --size-3: 1.5rem;
+
+  /** Text Properties */
+  --font-weight-00: 300;
+  --font-weight-0: 300;
+  --font-weight-1: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--clr-light-0);
+  color: var(--clr-dark-0);
+  font-size: 18px;
+}
+
+/** Typography */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h4,
+h5,
+h6 {
+  color: var(--clr-dark-1);
+}
+
+/** Navigation */
+nav {
+  background-color: var(--clr-light-0);
+  padding: var(--size-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: var(--size-00);
+  }
+
+  li a {
+    color: var(--clr-dark-0);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--clr-accent-0);
+    }
+  }
+}

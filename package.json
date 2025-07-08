@@ -1,0 +1,10 @@
+{
+  "name": "starter-css",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3"
+  }
+}
