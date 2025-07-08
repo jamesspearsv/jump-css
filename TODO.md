@@ -1,12 +1,13 @@
 # Starter CSS Essential Components
 
 - [x] Color scheme
-- [ ] Typography
-- [ ] Spacing and sizing
-- [ ] Navigation
+- [x] Typography
+- [x] Spacing and sizing
+- [x] Navigation
+- [x] Buttons
+- [x] Modals
 - [ ] Links
-- [ ] Buttons
-- [ ] Modals
+- [ ] Containers
 - [ ] Tables
 - [ ] Form Inputs
 - [ ] Form Labels
@@ -15,4 +16,3 @@
 - [ ] Light/Dark theme
 - [ ] Cards
 - [ ] Layouts
-- [ ] Containers

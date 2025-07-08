@@ -20,8 +20,6 @@
     <style>
       body {
         min-height: 200vh;
-        padding-inline: 1rem;
-        padding-top: 1rem;
       }
 
       div:has(nav) {
@@ -36,62 +34,108 @@
     </style>
   </head>
   <body>
-    <h1>Starter CSS Framework</h1>
+    <main>
+      <h1>Starter CSS Framework</h1>
 
-    <br />
-    <h2>Navigation</h2>
-
-    <p>Left Aligned Navigation</p>
-    <div>
-      <nav>
+      <section>
+        <h2>Navigation</h2>
+        <p>Left Aligned Navigation</p>
         <div>
-          <strong>Starter.css</strong>
+          <nav>
+            <ul>
+              <h1>Starter.css</h1>
+            </ul>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+      </section>
 
-    <p>Center Aligned Nav</p>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="#" aria-current="page">Home</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-        <ul>
-          <strong>Starter.css</strong>
-        </ul>
-        <ul>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+      <section>
+        <p>Center Aligned Nav</p>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="#" aria-current="page">Home</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <ul>
+              <h1>Starter.css</h1>
+            </ul>
+            <ul>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section>
+        <h2>Text</h2>
+        <div>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
+      </section>
+      <section>
+        <h2>Inline Text Elements</h2>
+        <div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+          <p><em>Lorem ipsum dolor sit amet.</em></p>
+          <p><s>Lorem ipsum dolor sit amet.</s></p>
+          <p><ins>Lorem ipsum dolor sit amet.</ins></p>
+          <p><del>Lorem ipsum dolor sit amet.</del></p>
+          <p><small>Lorem ipsum dolor sit amet.</small></p>
+        </div>
+      </section>
+      <section>
+        <h2>Buttons</h2>
+        <div>
+          <button type="button">button[type="button"]</button>
+          <button type="reset">button[type="reset"]</button>
+        </div>
+      </section>
+      <section>
+        <h2>Dialog</h2>
+        <button type="button" onclick="openModal()">Open Modal</button>
+      </section>
+    </main>
+    <dialog id="modal">
+      <article>
+        <h3>Hello, Modal!</h3>
+        <section>
+          <h2>Inline Text Elements</h2>
+          <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+            <p><em>Lorem ipsum dolor sit amet.</em></p>
+            <p><s>Lorem ipsum dolor sit amet.</s></p>
+            <p><ins>Lorem ipsum dolor sit amet.</ins></p>
+            <p><del>Lorem ipsum dolor sit amet.</del></p>
+            <p><small>Lorem ipsum dolor sit amet.</small></p>
+          </div>
+        </section>
+        <button type="reset" onclick="closeModal()" />
+      </article>
+    </dialog>
+    <script>
+      function openModal() {
+        const dialog = document.getElementById('modal');
+        dialog.showModal();
+      }
 
-    <br />
-    <h2>Text</h2>
-    <div>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-    </div>
-
-    Inline Text Elements
-    <div>
-      <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-      <p><em>Lorem ipsum dolor sit amet.</em></p>
-      <p><s>Lorem ipsum dolor sit amet.</s></p>
-      <p><ins>Lorem ipsum dolor sit amet.</ins></p>
-      <p><del>Lorem ipsum dolor sit amet.</del></p>
-      <p><small>Lorem ipsum dolor sit amet.</small></p>
-    </div>
+      function closeModal() {
+        const dialog = document.getElementById('modal');
+        dialog.close();
+      }
+    </script>
   </body>
 </html>

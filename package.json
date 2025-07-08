@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {},
+  "exports": "./dist/starter.min.css",
+  "scripts": {
+    "minify": "rm ./dist/* && cleancss -o dist/starter.min.css src/starter.css"
+  },
   "devDependencies": {
     "clean-css-cli": "^5.6.3"
   }
