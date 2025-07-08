@@ -1,11 +1,11 @@
 {
-  "name": "starter-css",
+  "name": "jump-css",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "exports": "./dist/starter.min.css",
+  "exports": "./dist/jump.min.css",
   "scripts": {
-    "minify": "rm ./dist/* && cleancss -o dist/starter.min.css src/starter.css"
+    "minify": "cleancss -o dist/jump.min.css src/jump.css"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.3"
