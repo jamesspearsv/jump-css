@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "exports": "./dist/jump.min.css",
-  "files": ["package.json", "./dist"],
+  "files": [
+    "package.json",
+    "./dist"
+  ],
   "scripts": {
     "minify": "cleancss -o dist/jump.min.css src/jump.css"
   },
