@@ -35,7 +35,9 @@
   </head>
   <body>
     <main>
-      <h1>Starter CSS Framework</h1>
+      <section>
+        <h1>Starter CSS Framework</h1>
+      </section>
 
       <section>
         <h2>Navigation</h2>
@@ -73,6 +75,7 @@
           </nav>
         </div>
       </section>
+
       <section>
         <h2>Text</h2>
         <div>
@@ -84,6 +87,7 @@
           <h6>Heading 6</h6>
         </div>
       </section>
+
       <section>
         <h2>Inline Text Elements</h2>
         <div>
@@ -96,18 +100,46 @@
           <p><small>Lorem ipsum dolor sit amet.</small></p>
         </div>
       </section>
+
       <section>
         <h2>Buttons</h2>
         <div>
-          <button type="button">button[type="button"]</button>
-          <button type="reset">button[type="reset"]</button>
+          <button type="button">Button</button>
+          <button type="reset">Reset Button</button>
         </div>
       </section>
+
       <section>
         <h2>Dialog</h2>
         <button type="button" onclick="openModal()">Open Modal</button>
       </section>
+      <section>
+        <h2>Forms & Inputs</h2>
+        <form onsubmit="preventSubmit(event)">
+          <fieldset>
+            <label for="textInput">Text Input</label>
+            <input type="text" name="textInput" />
+          </fieldset>
+          <fieldset>
+            <label for="numberInput">Number Input</label>
+            <input type="number" name="numberInput" />
+          </fieldset>
+          <fieldset>
+            <label for="textArea">Textarea</label>
+          </fieldset>
+          <fieldset>
+            <label for="checkbox">Checkbox</label>
+            <input type="checkbox" name="checkbox" value="Checkbox Value" ></fieldset>
+          </fieldset>
+          <textarea></textarea>
+          <fieldset>
+            <input type="submit" value="Submit Input" />
+            <button type="submit">Submit Button</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
+
     <dialog id="modal">
       <article>
         <h3>Hello, Modal!</h3>
@@ -135,6 +167,10 @@
       function closeModal() {
         const dialog = document.getElementById('modal');
         dialog.close();
+      }
+
+      function preventSubmit(event) {
+        event.preventDefault();
       }
     </script>
   </body>

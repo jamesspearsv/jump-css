@@ -5,7 +5,8 @@
   "exports": "./dist/jump.min.css",
   "files": [
     "package.json",
-    "./dist"
+    "./dist",
+    "README.md"
   ],
   "scripts": {
     "minify": "cleancss -o dist/jump.min.css src/jump.css"
