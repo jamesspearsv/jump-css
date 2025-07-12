@@ -1,12 +1,13 @@
 {
   "name": "jump-css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "exports": "./dist/jump.min.css",
   "files": [
     "package.json",
     "./dist",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "minify": "cleancss -o dist/jump.min.css src/jump.css"
