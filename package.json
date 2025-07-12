@@ -10,7 +10,9 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "minify": "cleancss -o dist/jump.min.css src/jump.css"
+    "minify": "cleancss -o dist/jump.min.css src/jump.css",
+    "dry-run-publish": "pnpm publish --dry-run",
+    "publish": "pnpm publish"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.3"
