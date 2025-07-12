@@ -11,8 +11,8 @@
   ],
   "scripts": {
     "minify": "cleancss -o dist/jump.min.css src/jump.css",
-    "dry-run-publish": "pnpm publish --dry-run",
-    "publish": "pnpm publish"
+    "publish:dry": "pnpm publish --dry-run",
+    "publish:dist": "pnpm publish"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.3"
