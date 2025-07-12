@@ -24,3 +24,14 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 - **Spacing properties** general updates
 - **Content width** responsive property
 - **Outline & border** style properties
+
+## v0.3.0
+
+### Added
+
+- **Table component** starting styles and layout
+
+### Updated
+
+- **Added mark styles** to inline text element styles
+- **Improved accent color** alternative values
