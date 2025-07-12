@@ -198,7 +198,6 @@ dialog > article > button[type='reset']::after {
 
 /** Forms & Inputs */
 form {
-  background-color: rebeccapurple;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-0);
@@ -221,8 +220,8 @@ textarea {
 }
 
 textarea {
-  min-width: 100%;
-  max-width: 100%;
+  resize: vertical;
+  overflow: auto;
 }
 
 label {
