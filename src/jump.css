@@ -144,6 +144,10 @@ button[type='reset']:hover {
 }
 
 /* TODO: Add link styles  */
+a {
+  padding: var(--spacing-0);
+  border-radius: var(--border-radius);
+}
 
 /** Modal */
 body:has(dialog[open]) {
@@ -232,4 +236,20 @@ label {
 
 label > input[type='checkbox'] {
   width: auto;
+}
+
+/** Focus States */
+input:focus-visible,
+button:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline-style: solid;
+  outline-color: color-mix(in srgb, var(--clr-accent), #ffffff 20%);
+  outline-width: 3px;
+
+  transition: outline-width 200ms ease-in-out;
+
+  @starting-style {
+    outline-width: 0;
+  }
 }
