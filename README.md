@@ -23,7 +23,8 @@
 **Objective:**  
 Jump.css is a lightweight CSS framework build on semantic HTML that helps you jump start your apps and websites in style. Jump.css promotes accessibility, maintainability, and modern web standards to create visually appealing and accessible layouts using clean, semantic markup.
 
-> [!NOTE] Jump.css is in active development and subject to breaking changes without notice. Try Pico CSS or Simple.css for a more robust and stable CSS framework.
+> [!NOTE]
+> Jump.css is in active development and subject to breaking changes without notice. Try Pico CSS or Simple.css for a more robust and stable CSS framework.
 
 I started Jump.css to build a set of base CSS rules and styles for my hobby and side projects. Jump.css is tailored to my personal tastes and preferences but you are welcome to make it your own.
 
