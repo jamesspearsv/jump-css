@@ -30,8 +30,10 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 ### Added
 
 - **Table component** starting styles and layout
+- **Documentation** for Jump.css up to v0.3.0
 
 ### Updated
 
 - **Added mark styles** to inline text element styles
 - **Improved accent color** alternative values
+- **Nav link** underline and hover animation

@@ -9,8 +9,12 @@
   - [\[WIP\] Documentation](#wip-documentation)
     - [Design System](#design-system)
     - [Layouts and Containers](#layouts-and-containers)
+    - [Buttons \& Links](#buttons--links)
     - [Forms](#forms)
     - [Components](#components)
+      - [Navigation](#navigation)
+      - [Modals](#modals)
+      - [Tables](#tables)
     - [Customization](#customization)
     - [Accessibility Best Practices](#accessibility-best-practices)
 
@@ -55,15 +59,15 @@ I started Jump.css to build a set of base CSS rules and styles for my hobby and 
   - [ ] Layout
 - Element bases styles
   - [x] Buttons
-  - [x] Navigation
   - [ ] Containers
   - [ ] Links
-  - [ ] Tables
 - Forms
   - [ ] Inputs, Labels, Fieldsets
   - [ ] Form Layout & Spacing
   - [ ] Form Validation
 - Components
+  - [x] Tables
+  - [x] Navigation
   - [x] Modals
   - [ ] Cards
   - [ ] Drop Downs
@@ -90,10 +94,153 @@ Jump.css is minimal and performant and depends on the following technical requir
 
 ### Layouts and Containers
 
+### Buttons & Links
+
+Buttons by default are styles with rounded corners, padding, and accent background color. Use `type=reset"` attribute to add a danger style button.
+
+```html
+<button>Button</button> <button type="reset">Reset Button</button>
+```
+
+Links by default use the accent color for the color property and include text underlining during hover states.
+
 ### Forms
+
+<!-- TODO: Add form documentation -->
 
 ### Components
 
+#### Navigation
+
+Navigation components can be created using`<nav>`, `<ul>`, `<li>`, and `<a>` elements. `<nav>` elements use flexbox and `justify-content: space-between` by default to easily define a navigation layout (ex. left aligned loge, center aligned, etc.)
+
+Navigation with left aligned wordmark
+
+```html
+<nav>
+  <ul>
+    <h1>Starter.css</h1>
+  </ul>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+Navigation with a center aligned wordmark
+
+```html
+<nav>
+  <ul>
+    <li><a href="#" aria-current="page">Home</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  <ul>
+    <h1>Starter.css</h1>
+  </ul>
+  <ul>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+Navigation links include default padding and simple hover animation
+
+#### Modals
+
+Create a modal component by wrapping an `<article>` in a `<dialog>` element and include any content as a child of the `<article>` element.
+
+Add a `<button type="reset">` after any modal content to automatically include a closing button.
+
+```html
+<dialog>
+  <article>
+    <button type="reset" />
+  </article>
+</dialog>
+```
+
+Jump.css does not include any JavaScript so a script to handle opening and closing a modal is required to enable interactivity.
+
+#### Tables
+
+Tables automatically include a styled header row, rounded corners, responsive width, and consistent cell spacing.
+
+Each table component should include a `<thead>` and a `<tbody>`. Include at least one `<tr>` with relevant `<th>` elements inside the table head.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Doe</td>
+      <td>30</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>25</td>
+      <td>Los Angeles</td>
+    </tr>
+    <tr>
+      <td>Mike Johnson</td>
+      <td>35</td>
+      <td>Chicago</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 ### Customization
+
+Jump.css is easy to customize by overriding a few CSS properties. The complete list of CSS properties available to customize is below.
+
+```css
+:root {
+  /** Color Properties */
+  --clr-dark-0: #343a40;
+  --clr-dark-1: #868e96;
+  --clr-light-0: #f8f9fa;
+  --clr-light-1: #f1f3f5;
+  --clr-accent-0: #7950f2;
+  --clr-accent-1: #9775fa;
+  --clr-danger: #f03e3e;
+  --clr-success: #2f9e44;
+
+  /** Font Properties  */
+  --weight-normal: 400;
+  --weight-bold: 700;
+  --weight-light: 200;
+
+  /** Size & Spacing Properties  */
+  --size-0: 0.75rem;
+  --size-1: 1rem;
+  --size-2: 1.25rem;
+
+  --spacing-00: 0.5rem;
+  --spacing-0: 0.75rem;
+  --spacing-1: 1rem;
+  --spacing-2: 1.25rem;
+
+  --content-width: min(80ch, 80%);
+
+  /** Border & Outline Properties */
+  --border-radius: 0.375rem;
+  --border-style: solid 1px var(--clr-dark-0);
+  --outline-style: solid 3px var(--clr-accent-1);
+}
+```
+
+Customize the default styling of any element by providing a higher specificity CSS rule in an additional stylesheet.
 
 ### Accessibility Best Practices

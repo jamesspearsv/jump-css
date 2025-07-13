@@ -127,10 +127,27 @@ nav a {
   text-decoration: none;
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
+  position: relative;
 }
 
 nav a:hover {
+  text-decoration: none;
   color: var(--clr-accent-0);
+}
+
+nav a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--clr-accent-0);
+  height: 2px;
+  transition: width 200ms ease-in-out;
+
+  @starting-style {
+    width: 0;
+  }
 }
 
 /** Buttons & Links */
@@ -276,9 +293,8 @@ td:not(:last-child) {
   border-right: var(--border-style);
 }
 
-/* TODO: Add internal table borders */
-
 /** Forms & Inputs */
+/* TODO: finish form, input, & layout rules */
 form {
   display: flex;
   flex-direction: column;
