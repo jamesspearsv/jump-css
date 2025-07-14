@@ -158,7 +158,7 @@ input[type='submit'] {
   border-radius: var(--border-radius);
   border: none;
   color: var(--clr-light-0);
-  font-size: var(1rem);
+  font-size: 1rem;
   background-color: var(--clr-accent-0);
 }
 
