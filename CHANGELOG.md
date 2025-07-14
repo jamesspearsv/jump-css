@@ -37,3 +37,7 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 - **Added mark styles** to inline text element styles
 - **Improved accent color** alternative values
 - **Nav link** underline and hover animation
+
+### Changes
+
+- **Migrate from Clean CSS** to Lightning CSS
