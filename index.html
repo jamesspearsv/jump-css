@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Starter CSS</title>
+    <title>Jump.css</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./src/jump.css" />
     <style>
@@ -11,12 +11,19 @@
         padding: 1rem;
         border: solid 1px black;
       }
+
+      .HContainer article,
+      .VContainer article {
+        height: 50px;
+        width: 50px;
+        background-color: var(--clr-accent-0);
+      }
     </style>
   </head>
   <body>
     <main>
       <section>
-        <h1>Starter CSS Framework</h1>
+        <h1>Jump.css</h1>
       </section>
 
       <section>
@@ -154,6 +161,25 @@
             </tr>
           </tbody>
         </table>
+      </section>
+      <section>
+        <section><h2>Semantic Containers</h2></section>
+        <p>Horizontal Container</p>
+        <section class="HContainer">
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+        </section>
+        <p>Vertical Container</p>
+        <section class="VContainer">
+          <aside>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+          </aside>
+        </section>
       </section>
     </main>
 
