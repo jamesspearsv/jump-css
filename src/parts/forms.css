@@ -19,7 +19,7 @@ textarea {
   border: var(--border-style);
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
-  background-color: var(--clr-light-1);
+  background-color: var(--clr-light-600);
   width: 100%;
   font-size: var(--size-1);
 }

@@ -5,8 +5,8 @@ table {
 }
 
 thead tr {
-  background-color: var(--clr-accent-0);
-  color: var(--clr-light-0);
+  background-color: var(--clr-accent-500);
+  color: var(--clr-light-500);
 }
 
 th,
@@ -16,7 +16,7 @@ td {
 
 th {
   border: var(--border-style);
-  border-color: var(--clr-accent-0);
+  border-color: var(--clr-accent-500);
 }
 
 thead > tr:first-child > th:first-child {

@@ -209,11 +209,11 @@ Jump.css is easy to customize by overriding a few CSS properties. The complete l
 ```css
 :root {
   /** Color Properties */
-  --clr-dark-0: #343a40;
-  --clr-dark-1: #868e96;
-  --clr-light-0: #f8f9fa;
-  --clr-light-1: #f1f3f5;
-  --clr-accent-0: #7950f2;
+  --clr-dark-500: #343a40;
+  --clr-dark-400: #868e96;
+  --clr-light-500: #f8f9fa;
+  --clr-light-600: #f1f3f5;
+  --clr-accent-500: #7950f2;
   --clr-accent-1: #9775fa;
   --clr-danger: #f03e3e;
   --clr-success: #2f9e44;
@@ -237,7 +237,7 @@ Jump.css is easy to customize by overriding a few CSS properties. The complete l
 
   /** Border & Outline Properties */
   --border-radius: 0.375rem;
-  --border-style: solid 1px var(--clr-dark-0);
+  --border-style: solid 1px var(--clr-dark-500);
   --outline-style: solid 3px var(--clr-accent-1);
 }
 ```

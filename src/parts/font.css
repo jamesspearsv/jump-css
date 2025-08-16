@@ -25,11 +25,11 @@ h6 {
 h4,
 h5,
 h6 {
-  color: var(--clr-dark-1);
+  color: var(--clr-dark-600);
 }
 
 s {
-  color: var(--clr-dark-1);
+  color: var(--clr-dark-400);
 }
 
 ins {
@@ -42,6 +42,6 @@ del {
 
 mark {
   background-color: var(--clr-accent-1);
-  color: var(--clr-light-0);
+  color: var(--clr-light-500);
   padding: 1px;
 }

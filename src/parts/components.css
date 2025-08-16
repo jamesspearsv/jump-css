@@ -1,6 +1,6 @@
 /** Navigation */
 nav {
-  background-color: var(--clr-light-0);
+  background-color: var(--clr-light-500);
   padding: var(--spacing-1);
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@ nav > ul {
 }
 
 nav a {
-  color: var(--clr-dark-0);
+  color: var(--clr-dark-500);
   text-decoration: none;
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
@@ -23,7 +23,7 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-  color: var(--clr-accent-0);
+  color: var(--clr-accent-500);
 }
 
 nav a:hover::after {
@@ -32,7 +32,7 @@ nav a:hover::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--clr-accent-0);
+  background-color: var(--clr-accent-500);
   height: 2px;
   transition: width 200ms ease-in-out;
 
@@ -71,7 +71,7 @@ dialog > article {
   padding: var(--spacing-1);
   border: none;
   border-radius: var(--border-radius);
-  background-color: var(--clr-light-0);
+  background-color: var(--clr-light-500);
 
   max-width: var(--content-width);
   overflow: auto;
