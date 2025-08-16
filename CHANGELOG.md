@@ -51,3 +51,4 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 ### Changes
 
 - **Updated landmark container** styles when used as a direct child of `<body />`
+- **Restructure source** into component parts

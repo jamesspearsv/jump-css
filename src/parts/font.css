@@ -1,0 +1,47 @@
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h4,
+h5,
+h6 {
+  color: var(--clr-dark-1);
+}
+
+s {
+  color: var(--clr-dark-1);
+}
+
+ins {
+  color: var(--clr-success);
+}
+
+del {
+  color: var(--clr-danger);
+}
+
+mark {
+  background-color: var(--clr-accent-1);
+  color: var(--clr-light-0);
+  padding: 1px;
+}
