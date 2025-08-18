@@ -1,6 +1,6 @@
 /** Navigation */
 nav {
-  background-color: var(--clr-light-500);
+  background-color: var(--clr-main-100);
   padding: var(--spacing-1);
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@ nav > ul {
 }
 
 nav a {
-  color: var(--clr-dark-500);
+  color: var(--clr-main-700);
   text-decoration: none;
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
@@ -41,9 +41,23 @@ nav a:hover::after {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  nav {
+    background-color: var(--clr-main-900);
+  }
+
+  nav a {
+    color: var(--clr-main-400);
+  }
+}
+
 /** Modal */
 body:has(dialog[open]) {
   overflow: hidden;
+}
+
+dialog {
+  color: inherit;
 }
 
 dialog[open] {
@@ -71,7 +85,7 @@ dialog > article {
   padding: var(--spacing-1);
   border: none;
   border-radius: var(--border-radius);
-  background-color: var(--clr-light-500);
+  background-color: var(--clr-main-200);
 
   max-width: var(--content-width);
   overflow: auto;
@@ -82,6 +96,7 @@ dialog > article > button[type='reset'] {
   top: var(--size-0);
   right: var(--spacing-0);
   background-color: transparent;
+  color: var(--clr-main-100);
 }
 
 dialog > article > button[type='reset']:hover {
@@ -90,6 +105,21 @@ dialog > article > button[type='reset']:hover {
 
 dialog > article > button[type='reset']::after {
   content: '✕';
+}
+
+@media (prefers-color-scheme: dark) {
+  dialog > article {
+    background-color: var(--clr-main-900);
+  }
+
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+  }
+
+  dialog > article > button[type='reset'] {
+    color: var(--clr-main-600);
+  }
 }
 
 /*

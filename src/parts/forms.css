@@ -14,14 +14,23 @@ fieldset {
 }
 
 /** Inputs & Controls */
+form {
+  color: inherit;
+}
+
 input,
 textarea {
   border: var(--border-style);
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
-  background-color: var(--clr-light-600);
+  background-color: var(--clr-main-200);
   width: 100%;
   font-size: var(--size-1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--clr-main-600);
 }
 
 textarea {
@@ -37,4 +46,16 @@ label {
 
 label > input[type='checkbox'] {
   width: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  input,
+  textarea {
+    background-color: var(--clr-main-800);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--clr-main-500);
+  }
 }

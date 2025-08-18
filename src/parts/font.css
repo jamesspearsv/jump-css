@@ -1,3 +1,12 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+  color: var(--clr-main-900);
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -25,11 +34,11 @@ h6 {
 h4,
 h5,
 h6 {
-  color: var(--clr-dark-600);
+  color: var(--clr-main-600);
 }
 
 s {
-  color: var(--clr-dark-400);
+  color: var(--clr-main-600);
 }
 
 ins {
@@ -41,7 +50,23 @@ del {
 }
 
 mark {
-  background-color: var(--clr-accent-1);
-  color: var(--clr-light-500);
-  padding: 1px;
+  background-color: var(--clr-accent-400);
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--clr-main-200);
+  }
+
+  h4,
+  h5,
+  h6 {
+    color: var(--clr-main-600);
+  }
+
+  s {
+    color: var(--clr-main-500);
+  }
 }

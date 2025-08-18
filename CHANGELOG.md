@@ -47,8 +47,10 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 ### Added
 
 - **Semantic layouts** using `<section/>`, `<article/>`, and `<aside />` containers
+- **Improved color system** using base variables, shading, and variations
 
 ### Changes
 
 - **Updated landmark container** styles when used as a direct child of `<body />`
 - **Restructure source** into component parts
+- **Updated documentation** for improved color system

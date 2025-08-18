@@ -5,7 +5,7 @@ input[type='submit'] {
   padding-block: var(--spacing-0);
   border-radius: var(--border-radius);
   border: none;
-  color: var(--clr-light-500);
+  color: var(--clr-main-100);
   font-size: 1rem;
   background-color: var(--clr-accent-500);
 }
@@ -13,7 +13,7 @@ input[type='submit'] {
 button:hover,
 input[type='submit']:hover {
   cursor: pointer;
-  background-color: color-mix(in srgb, var(--clr-accent-500), #000000 5%);
+  background-color: var(--clr-accent-600);
 }
 
 button[type='reset'] {

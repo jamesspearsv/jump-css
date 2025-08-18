@@ -6,7 +6,7 @@ table {
 
 thead tr {
   background-color: var(--clr-accent-500);
-  color: var(--clr-light-500);
+  color: var(--clr-main-100);
 }
 
 th,
