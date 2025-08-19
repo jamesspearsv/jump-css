@@ -1,0 +1,61 @@
+/* TODO: finish form, input, & layout rules */
+/** Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-0);
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-00);
+}
+
+/** Inputs & Controls */
+form {
+  color: inherit;
+}
+
+input,
+textarea {
+  border: var(--border-style);
+  padding: var(--spacing-0);
+  border-radius: var(--border-radius);
+  background-color: var(--clr-main-200);
+  width: 100%;
+  font-size: var(--size-1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--clr-main-600);
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-00);
+}
+
+label > input[type='checkbox'] {
+  width: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  input,
+  textarea {
+    background-color: var(--clr-main-800);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--clr-main-500);
+  }
+}

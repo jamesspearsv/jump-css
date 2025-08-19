@@ -6,9 +6,9 @@
   - [Core Features](#core-features)
   - [Roadmap](#roadmap)
   - [Technical Requirements](#technical-requirements)
-  - [\[WIP\] Documentation](#wip-documentation)
-    - [Design System](#design-system)
-    - [Layouts and Containers](#layouts-and-containers)
+  - [Documentation](#documentation)
+    - [Color system](#color-system)
+    - [Layouts, Containers, and Spacing](#layouts-containers-and-spacing)
     - [Buttons \& Links](#buttons--links)
     - [Forms](#forms)
     - [Components](#components)
@@ -89,11 +89,40 @@ Jump.css is minimal and performant and depends on the following technical requir
 | **Custom Properties**  | Enable easy overrides and theming with CSS variables.         |
 | **No Framework Bloat** | Avoid unnecessary CSS and class-based utilities.              |
 
-## [WIP] Documentation
+## Documentation
 
-### Design System
+### Color system
 
-### Layouts and Containers
+Jump.css uses a sensible color system that is simple, accessible, and customizable. The color system is build on four color properties that can be overwritten for customization.
+
+1. `--clr-main`: Main color that is used for backgrounds, text, borders, etc.
+2. `--clr-accent`: Accent color that is used for emphasis, clickables, and components
+3. `--clr-danger`: Secondary accent color used to convey feedback for dangerous actions
+4. `--clr-success`: Secondary accent color used to convey feedback for successful actions
+
+A range of shades are available based on `--clr-main` and `--clr-accent`.
+
+```css
+/* lighter variants */
+--clr-main-100: color-mix(in oklch, var(--clr-main), #ffffff 90%);
+--clr-main-200: color-mix(in oklch, var(--clr-main), #ffffff 75%);
+--clr-main-300: color-mix(in oklch, var(--clr-main), #ffffff 60%);
+--clr-main-400: color-mix(in oklch, var(--clr-main), #ffffff 45%);
+
+--clr-main-500: var(--clr-main); /* base */
+
+/* darker variants */
+--clr-main-600: color-mix(in oklch, var(--clr-main), #000000 20%);
+--clr-main-700: color-mix(in oklch, var(--clr-main), #000000 35%);
+--clr-main-800: color-mix(in oklch, var(--clr-main), #000000 50%);
+--clr-main-900: color-mix(in oklch, var(--clr-main), #000000 65%);
+```
+
+Each variant can be used directly and customized by providing a custom value. View the source code for a complete list of derived color properties.
+
+### Layouts, Containers, and Spacing
+
+<!-- TODO: Add container documentation -->
 
 ### Buttons & Links
 
@@ -209,12 +238,12 @@ Jump.css is easy to customize by overriding a few CSS properties. The complete l
 ```css
 :root {
   /** Color Properties */
-  --clr-dark-0: #343a40;
-  --clr-dark-1: #868e96;
-  --clr-light-0: #f8f9fa;
-  --clr-light-1: #f1f3f5;
-  --clr-accent-0: #7950f2;
-  --clr-accent-1: #9775fa;
+  --clr-dark-500: #343a40;
+  --clr-dark-400: #868e96;
+  --clr-light-500: #f8f9fa;
+  --clr-light-600: #f1f3f5;
+  --clr-accent-500: #7950f2;
+  --clr-accent-500: #9775fa;
   --clr-danger: #f03e3e;
   --clr-success: #2f9e44;
 
@@ -237,8 +266,8 @@ Jump.css is easy to customize by overriding a few CSS properties. The complete l
 
   /** Border & Outline Properties */
   --border-radius: 0.375rem;
-  --border-style: solid 1px var(--clr-dark-0);
-  --outline-style: solid 3px var(--clr-accent-1);
+  --border-style: solid 1px var(--clr-dark-500);
+  --outline-style: solid 3px var(--clr-accent-500);
 }
 ```
 

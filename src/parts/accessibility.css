@@ -1,0 +1,12 @@
+/** Focus States */
+input:focus-visible,
+button:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: var(--outline-style);
+  transition: outline-width 200ms ease-in-out;
+
+  @starting-style {
+    outline-width: 0;
+  }
+}
