@@ -5,21 +5,18 @@ REMINDER:
 */
 
 /** TOP LEVEL CONTAINERS */
-body > nav {
-  width: 100dvw;
-}
-
 body > main {
   width: var(--content-width);
   margin: auto;
 }
 
+body > header,
 body > footer {
   width: 100dvw;
 }
 
 section {
-  margin-bottom: var(--spacing-1);
+  margin-block: var(--spacing-1);
 }
 
 /** CONTENT CONTAINERS */

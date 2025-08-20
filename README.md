@@ -7,15 +7,15 @@
   - [Roadmap](#roadmap)
   - [Technical Requirements](#technical-requirements)
   - [Documentation](#documentation)
-    - [Color system](#color-system)
-    - [Layouts, Containers, and Spacing](#layouts-containers-and-spacing)
-    - [Buttons \& Links](#buttons--links)
+    - [Colors](#colors)
+    - [Semantic Containers](#semantic-containers)
+    - [Utility Containers](#utility-containers)
+    - [Clickables](#clickables)
     - [Forms](#forms)
     - [Components](#components)
       - [Navigation](#navigation)
       - [Modals](#modals)
       - [Tables](#tables)
-    - [Customization](#customization)
     - [Accessibility Best Practices](#accessibility-best-practices)
 
 ## Project Overview
@@ -56,11 +56,11 @@ I started Jump.css to build a set of base CSS rules and styles for my hobby and 
   - [x] Color scheme
   - [x] Typography
   - [x] Spacing and sizing
-  - [ ] Light/Dark theme
-  - [ ] Layout
+  - [x] Light/Dark theme
+  - [ ] Page layouts
 - Element bases styles
   - [x] Buttons
-  - [ ] Containers
+  - [x] Containers
   - [ ] Links
 - Forms
   - [ ] Inputs, Labels, Fieldsets
@@ -71,6 +71,7 @@ I started Jump.css to build a set of base CSS rules and styles for my hobby and 
   - [x] Navigation
   - [x] Modals
   - [ ] Cards
+  - [ ] Groups
   - [ ] Drop Downs
 - Documentation
   - [ ] Components
@@ -91,7 +92,7 @@ Jump.css is minimal and performant and depends on the following technical requir
 
 ## Documentation
 
-### Color system
+### Colors
 
 Jump.css uses a sensible color system that is simple, accessible, and customizable. The color system is build on four color properties that can be overwritten for customization.
 
@@ -120,11 +121,41 @@ A range of shades are available based on `--clr-main` and `--clr-accent`.
 
 Each variant can be used directly and customized by providing a custom value. View the source code for a complete list of derived color properties.
 
-### Layouts, Containers, and Spacing
+Sensible light and dark themes are available and applied using `prefers-color-scheme` media queries.
 
-<!-- TODO: Add container documentation -->
+### Semantic Containers
 
-### Buttons & Links
+When used as direct children of `<body />`, `<header />`, `<main />`, and `<footer />` function as landmark containers to help structure parts of the page.
+
+```css
+body > header {
+  ...;
+}
+body > main {
+  ...;
+}
+body > footer {
+  ...;
+}
+```
+
+When used as containers, `<header />` and `<footer />` are both `100dvw` wide by default.
+
+As a container, `<main />` is set to the `--content-width` property and centered using `margin: auto;` by default.
+
+### Utility Containers
+
+There are two utility containers: `<section />`, and `<aside />`
+
+`<section />` by default apply only `margin-block` for consistent spacing between page sections but does not provide any alignment on its own. `<section />` containers with 2 or more `<article />` children will automatically apply `display: flex;` with a uniform gap and flex wrapping.
+
+`<aside />` by provide vertical stacking using `display: flex;` with a uniform gap between children.
+
+Wrapping `<aside />` in `<section />` will apply consistent margins outside the element while also vertically stacking any inner elements.
+
+### Clickables
+
+Clickable include buttons and links
 
 Buttons by default are styles with rounded corners, padding, and accent background color. Use `type=reset"` attribute to add a danger style button.
 
@@ -142,7 +173,7 @@ Links by default use the accent color for the color property and include text un
 
 #### Navigation
 
-Navigation components can be created using`<nav>`, `<ul>`, `<li>`, and `<a>` elements. `<nav>` elements use flexbox and `justify-content: space-between` by default to easily define a navigation layout (ex. left aligned loge, center aligned, etc.)
+Navigation components can be created using`<nav>`, `<ul>`, `<li>`, and `<a>` elements. `<nav>` uses flexbox and `justify-content: space-between` by default to easily define a navigation layout (ex. left aligned logo, center aligned, etc.)
 
 Navigation with left aligned wordmark
 
@@ -230,47 +261,5 @@ Each table component should include a `<thead>` and a `<tbody>`. Include at leas
   </tbody>
 </table>
 ```
-
-### Customization
-
-Jump.css is easy to customize by overriding a few CSS properties. The complete list of CSS properties available to customize is below.
-
-```css
-:root {
-  /** Color Properties */
-  --clr-dark-500: #343a40;
-  --clr-dark-400: #868e96;
-  --clr-light-500: #f8f9fa;
-  --clr-light-600: #f1f3f5;
-  --clr-accent-500: #7950f2;
-  --clr-accent-500: #9775fa;
-  --clr-danger: #f03e3e;
-  --clr-success: #2f9e44;
-
-  /** Font Properties  */
-  --weight-normal: 400;
-  --weight-bold: 700;
-  --weight-light: 200;
-
-  /** Size & Spacing Properties  */
-  --size-0: 0.75rem;
-  --size-1: 1rem;
-  --size-2: 1.25rem;
-
-  --spacing-00: 0.5rem;
-  --spacing-0: 0.75rem;
-  --spacing-1: 1rem;
-  --spacing-2: 1.25rem;
-
-  --content-width: min(80ch, 80%);
-
-  /** Border & Outline Properties */
-  --border-radius: 0.375rem;
-  --border-style: solid 1px var(--clr-dark-500);
-  --outline-style: solid 3px var(--clr-accent-500);
-}
-```
-
-Customize the default styling of any element by providing a higher specificity CSS rule in an additional stylesheet.
 
 ### Accessibility Best Practices
