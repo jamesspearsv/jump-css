@@ -54,3 +54,11 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 - **Updated landmark container** styles when used as a direct child of `<body />`
 - **Restructure source** into component parts
 - **Updated documentation** for improved color system
+
+## v0.4.1
+
+## Fixes & Updates
+
+- **Removed outdated docs** from README
+- **Added current doc** form landmark and utility containers
+- **Fixed low contrast** for accent colors
