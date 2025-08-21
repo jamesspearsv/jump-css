@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Jump.css</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./src/jump.css" />
+    <link id="jump-css-link" rel="stylesheet" href="./src/jump.css" />
     <style>
       div:has(nav) {
         padding: 1rem;
@@ -67,6 +67,7 @@
     <main>
       <section>
         <h1>Jump.css</h1>
+        <button onclick="previewBuild(event)">Preview build</button>
       </section>
       <section>
         <h1>Colors</h1>
@@ -271,6 +272,29 @@
 
       function preventSubmit(event) {
         event.preventDefault();
+      }
+    </script>
+    <script>
+      function previewBuild(event) {
+        const availableStyles = {
+          dev: './src/jump.css',
+          build: './dist/jump.min.css',
+        };
+
+        const linkTag = document.getElementById('jump-css-link');
+        console.log(linkTag);
+
+        if (!linkTag || !(linkTag instanceof HTMLLinkElement)) return;
+
+        console.log(linkTag.href);
+
+        if (linkTag.href.match('jump.css')) {
+          linkTag.setAttribute('href', availableStyles.build);
+          event.currentTarget.innerText = 'Previewing build';
+        } else {
+          linkTag.setAttribute('href', availableStyles.dev);
+          event.currentTarget.innerText = 'Viewing dev';
+        }
       }
     </script>
   </body>
