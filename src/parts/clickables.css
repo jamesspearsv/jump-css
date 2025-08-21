@@ -1,4 +1,4 @@
-/** Buttons & Links */
+/** Buttons */
 button,
 input[type='submit'] {
   padding-inline: var(--spacing-1);
@@ -24,11 +24,18 @@ button[type='reset']:hover {
   background-color: color-mix(in srgb, var(--clr-danger), #000000 10%);
 }
 
+/** Links */
 a {
-  color: var(--clr-accent-500);
+  color: var(--clr-accent-600);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--clr-accent-400);
+  }
 }

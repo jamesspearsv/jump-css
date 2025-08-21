@@ -6,6 +6,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: inherit;
 }
 
 nav > ul {
@@ -15,7 +16,8 @@ nav > ul {
 }
 
 nav a {
-  color: var(--clr-main-700);
+  /* color: var(--clr-main-700); */
+  color: inherit;
   text-decoration: none;
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
@@ -24,7 +26,6 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-  color: var(--clr-accent-500);
 }
 
 nav a:hover::after {
@@ -45,10 +46,6 @@ nav a:hover::after {
 @media (prefers-color-scheme: dark) {
   nav {
     background-color: var(--clr-main-900);
-  }
-
-  nav a {
-    color: var(--clr-main-400);
   }
 }
 
