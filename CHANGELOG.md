@@ -62,3 +62,15 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 - **Removed outdated docs** from README
 - **Added current doc** form landmark and utility containers
 - **Fixed low contrast** for accent colors
+
+## v0.5.0
+
+### Added
+
+- ***
+
+### Fixed
+
+- **Font color consistency** of links in nav components
+- **Landmark container** default padding and margins
+- **Input, textarea font color** inheritance bug

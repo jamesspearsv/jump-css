@@ -20,6 +20,7 @@ form {
 
 input,
 textarea {
+  color: inherit;
   border: var(--border-style);
   padding: var(--spacing-0);
   border-radius: var(--border-radius);

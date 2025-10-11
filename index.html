@@ -21,7 +21,7 @@
       .HContainer.clr > article {
         height: auto;
         width: auto;
-        color: var(--clr-accent-main);
+        color: var(--clr-accent-500);
         padding: 0.375rem;
         border-radius: 3px;
       }
@@ -64,11 +64,11 @@
     </style>
   </head>
   <body>
+    <header>
+      <h1>Jump.css</h1>
+      <button onclick="previewBuild(event)">Viewing dev</button>
+    </header>
     <main>
-      <section>
-        <h1>Jump.css</h1>
-        <button onclick="previewBuild(event)">Preview build</button>
-      </section>
       <section>
         <h1>Colors</h1>
         <section class="HContainer clr">
@@ -240,6 +240,9 @@
         </section>
       </section>
     </main>
+    <footer>
+      <p>© 2025 James Spears, V. All Rights Reserved</p>
+    </footer>
 
     <dialog id="modal">
       <article>
