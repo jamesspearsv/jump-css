@@ -16,6 +16,7 @@
       - [Navigation](#navigation)
       - [Modals](#modals)
       - [Tables](#tables)
+      - [Cards](#cards)
     - [Accessibility Best Practices](#accessibility-best-practices)
 
 ## Project Overview
@@ -70,7 +71,7 @@ I started Jump.css to build a set of base CSS rules and styles for my hobby and 
   - [x] Tables
   - [x] Navigation
   - [x] Modals
-  - [ ] Cards
+  - [x] Cards
   - [ ] Groups
   - [ ] Drop Downs
 - Documentation
@@ -260,6 +261,14 @@ Each table component should include a `<thead>` and a `<tbody>`. Include at leas
     </tr>
   </tbody>
 </table>
+```
+
+#### Cards
+
+Add cards to your HTML by wrapping any elements or content with `<article />` elements. Any elements or content inside is centered using flexbox.
+
+```html
+<article>[put any content here]</article>
 ```
 
 ### Accessibility Best Practices

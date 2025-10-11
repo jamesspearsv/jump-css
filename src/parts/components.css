@@ -119,6 +119,20 @@ dialog > article > button[type='reset']::after {
   }
 }
 
-/*
-  TODO: Add card component
-*/
+/** CARDS */
+article {
+  background-color: var(--clr-main-200);
+  padding: 1rem 1.25rem;
+  border-radius: var(--border-radius);
+  border: var(--border-style);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  article {
+    background-color: var(--clr-main-800);
+  }
+}

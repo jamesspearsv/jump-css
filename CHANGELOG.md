@@ -60,14 +60,14 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 ## Fixes & Updates
 
 - **Removed outdated docs** from README
-- **Added current doc** form landmark and utility containers
+- **Added current docs** form landmark and utility containers
 - **Fixed low contrast** for accent colors
 
 ## v0.5.0
 
 ### Added
 
-- ***
+- **Card component styles** for `<article />` elements
 
 ### Fixed
 
