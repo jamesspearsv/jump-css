@@ -65,12 +65,21 @@ Initial release of Jump.css including starting styles for typography, spacing, b
 
 ## v0.5.0
 
+Version 0.5.0 adds support for card components and layouts, introduces bending changes (not quite breaking) for landmark and content containers, and other general updates and fixes
+
 ### Added
 
 - **Card component styles** for `<article />` elements
+- **Layouts** including `sidebar + main` and `readable column`
+- **Custom checkbox** base styles and transitions
 
 ### Fixed
 
 - **Font color consistency** of links in nav components
 - **Landmark container** default padding and margins
 - **Input, textarea font color** inheritance bug
+
+### Updates
+
+- **Update forced vertical container** structure to improve ease of use and specificity
+- **Improved landmark container** definitions and structures

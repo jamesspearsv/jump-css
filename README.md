@@ -8,8 +8,9 @@
   - [Technical Requirements](#technical-requirements)
   - [Documentation](#documentation)
     - [Colors](#colors)
-    - [Semantic Containers](#semantic-containers)
-    - [Utility Containers](#utility-containers)
+    - [Landmark Containers](#landmark-containers)
+    - [Content Containers](#content-containers)
+    - [Layout Containers](#layout-containers)
     - [Clickables](#clickables)
     - [Forms](#forms)
     - [Components](#components)
@@ -124,9 +125,9 @@ Each variant can be used directly and customized by providing a custom value. Vi
 
 Sensible light and dark themes are available and applied using `prefers-color-scheme` media queries.
 
-### Semantic Containers
+### Landmark Containers
 
-When used as direct children of `<body />`, `<header />`, `<main />`, and `<footer />` function as landmark containers to help structure parts of the page.
+When used as direct children of `<body />`, `<header />`, `<main />`, and `<footer />` function as landmark containers to help structure content
 
 ```css
 body > header {
@@ -140,11 +141,9 @@ body > footer {
 }
 ```
 
-When used as containers, `<header />` and `<footer />` are both `100dvw` wide by default.
+As landmark containers `<header />`, `<main />`, and `<footer />` have a width of `100dvw` applied automatically.
 
-As a container, `<main />` is set to the `--content-width` property and centered using `margin: auto;` by default.
-
-### Utility Containers
+### Content Containers
 
 There are two utility containers: `<section />`, and `<aside />`
 
@@ -153,6 +152,27 @@ There are two utility containers: `<section />`, and `<aside />`
 `<aside />` by provide vertical stacking using `display: flex;` with a uniform gap between children.
 
 Wrapping `<aside />` in `<section />` will apply consistent margins outside the element while also vertically stacking any inner elements.
+
+### Layout Containers
+
+Two layouts are available using a combination of `<div />`, `<main />`, and `<aside />`. All layouts can be used at any page level including as top level containers and direct children of landmark containers
+
+Build a sidebar + main layout using this structure
+
+```html
+<div>
+  <aside>[...]</aside>
+  <main>[...]</main>
+</div>
+```
+
+Use a readable column layout using this structure
+
+```html
+<div>
+  <main>[...]</main>
+</div>
+```
 
 ### Clickables
 

@@ -39,6 +39,47 @@ textarea {
   overflow: auto;
 }
 
+input[type='checkbox'] {
+  appearance: none;
+  transition: background-color 200ms ease-in-out;
+  --checkmark-offset: 0.2rem;
+  --checkmark-starting-offset: 50%;
+  --checkmark-radius: calc(var(--border-radius) - var(--checkmark-offset));
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:checked {
+    position: relative;
+    border-color: var(--clr-accent-500);
+    transition: border-color 200ms ease-in-out;
+  }
+
+  &:checked::before {
+    content: '';
+    position: absolute;
+    top: var(--checkmark-offset);
+    right: var(--checkmark-offset);
+    bottom: var(--checkmark-offset);
+    left: var(--checkmark-offset);
+    border-radius: var(--checkmark-offset);
+    background-color: var(--clr-accent-500);
+
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+
+    @starting-style {
+      background-color: transparent;
+      top: var(--checkmark-starting-offset);
+      right: var(--checkmark-starting-offset);
+      bottom: var(--checkmark-starting-offset);
+      left: var(--checkmark-starting-offset);
+    }
+  }
+}
+
 label {
   display: flex;
   align-items: center;

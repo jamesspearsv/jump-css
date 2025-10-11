@@ -4,39 +4,62 @@ REMINDER:
 <section> is used for thematic grouping or subdivision of content.
 */
 
-/** TOP LEVEL CONTAINERS */
-body > main {
-  width: var(--content-width);
-  margin: auto;
-}
-
+/** Landmark Containers */
 body > header,
-body > footer {
+body > footer,
+body > main {
   width: 100dvw;
-  padding: 1.25rem;
-  text-align: center;
+  /* padding: 1.25rem; */
 }
 
+body > header {
+  margin-bottom: var(--spacing-1);
+}
+
+body > footer {
+  margin-top: var(--spacing-1);
+}
+
+body > main {
+  margin-block: var(--spacing-1);
+}
+
+/** Content Containers */
 section {
   margin-block: var(--spacing-1);
 }
 
-/** CONTENT CONTAINERS */
-/** horizontal section containers */
+/* Forced horizontal containers */
 section:has(> article:nth-child(2)) {
   display: flex;
   gap: var(--spacing-1);
   flex-wrap: wrap;
 }
 
-/** vertical aside containers */
-aside {
+/* Forced vertical containers */
+aside:has(> article) {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-1);
 }
 
 /** LAYOUTS */
-/*
-  TODO: Add sidebar navigation layout
-*/
+/* Sidebar + Main */
+div:has(> aside) {
+  display: flex;
+  gap: 1rem;
+}
+
+div > aside:has(+ main) {
+  width: 250px;
+}
+
+div > aside + main {
+  flex: 1;
+}
+
+/* Readable Column */
+div > main {
+  width: var(--content-width);
+  margin: auto;
+}
