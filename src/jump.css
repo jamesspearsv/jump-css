@@ -9,6 +9,7 @@
 @import url('./parts/font.css');
 @import url('./parts/forms.css');
 @import url('./parts/tables.css');
+@import url('./parts//classes.css');
 
 /** Global styles and rules */
 * {

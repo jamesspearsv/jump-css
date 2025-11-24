@@ -83,3 +83,16 @@ Version 0.5.0 adds support for card components and layouts, introduces bending c
 
 - **Update forced vertical container** structure to improve ease of use and specificity
 - **Improved landmark container** definitions and structures
+
+## v0.6.0
+
+Version 0.6.0 adds support for a basic set of utility classes to improve the library's API and fixes accessibility problems in the color system
+
+### Added
+
+- **Utility classes** for easier library use and extensibility
+
+### Fixed
+
+- **Color contrast accessibility** color system problem when switching between light and dark mode
+  

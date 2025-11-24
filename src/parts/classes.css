@@ -1,0 +1,32 @@
+/** Utility Classes */
+/* 
+Jump.css can be used purely without any classes. These classes are provided to make it easier to apply consistent styling from the library to non-library elements and to improve the ease-of-use when working directly with the library properties is required.
+*/
+.bordered {
+  border: var(--border-style);
+}
+
+.outlined {
+  outline: var(--outline-style);
+}
+
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+.bg-accent {
+  background-color: var(--clr-accent-500);
+}
+
+.hoverable:hover {
+  background-color: var(--clr-accent-500);
+}
+
+.focusable:focus-visible {
+  outline: var(--outline-style);
+  transition: outline-width 200ms ease-in-out;
+
+  @starting-style {
+    outline-width: 0;
+  }
+}

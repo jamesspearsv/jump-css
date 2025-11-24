@@ -18,7 +18,7 @@
       - [Modals](#modals)
       - [Tables](#tables)
       - [Cards](#cards)
-    - [Accessibility Best Practices](#accessibility-best-practices)
+    - [Utility Classes](#utility-classes)
 
 ## Project Overview
 
@@ -59,13 +59,13 @@ I started Jump.css to build a set of base CSS rules and styles for my hobby and 
   - [x] Typography
   - [x] Spacing and sizing
   - [x] Light/Dark theme
-  - [ ] Page layouts
+  - [x] Page layouts
 - Element bases styles
   - [x] Buttons
   - [x] Containers
   - [ ] Links
 - Forms
-  - [ ] Inputs, Labels, Fieldsets
+  - [x] Inputs, Labels, Fieldsets
   - [ ] Form Layout & Spacing
   - [ ] Form Validation
 - Components
@@ -86,11 +86,11 @@ Jump.css is minimal and performant and depends on the following technical requir
 
 | Requirement            | Description                                                   |
 | ---------------------- | ------------------------------------------------------------- |
-| **Element Selectors**  | Style semantic HTML elements directly, not through classes.   |
-| **Minimal Classes**    | Provide only a handful of utility classes for accessibility.  |
-| **Attribute Styling**  | Use attribute selectors for stateful and interactive styling. |
-| **Custom Properties**  | Enable easy overrides and theming with CSS variables.         |
-| **No Framework Bloat** | Avoid unnecessary CSS and class-based utilities.              |
+| **Element Selectors**  | Styles semantic HTML elements directly, not through classes.   |
+| **Minimal Classes**    | Provides a handful of utility classes for accessibility.  |
+| **Attribute Styling**  | Uses attribute selectors for stateful and interactive styling. |
+| **Custom Properties**  | Enables easy overrides and theming with CSS variables.         |
+| **No Framework Bloat** | Avoids unnecessary CSS and class-based utilities.              |
 
 ## Documentation
 
@@ -291,4 +291,15 @@ Add cards to your HTML by wrapping any elements or content with `<article />` el
 <article>[put any content here]</article>
 ```
 
-### Accessibility Best Practices
+### Utility Classes
+
+Jump.css include a small set of utility classes that make is easy to apply consistent styles from the library to other elements and components. These classes make it easy to apply consistent styling and work with Jump.css properties without needing to manually use or edit CSS properties
+
+Utility classes include
+
+- `bordered` Apply the library border style to elements
+- `outlined` Apply the library outline style to elements
+- `rounded` Set an elements border radius consistent with the library
+- `bg-accent` Set an elements background color to `--clr-accent-500`
+- `hoverable` Apply the library hover style to any element
+- `focusable` Apply the library `focus-visible` style to any focusable element

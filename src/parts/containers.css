@@ -8,7 +8,8 @@ REMINDER:
 body > header,
 body > footer,
 body > main {
-  width: 100dvw;
+  width: 95dvw;
+  margin: auto;
   /* padding: 1.25rem; */
 }
 
@@ -46,16 +47,19 @@ aside:has(> article) {
 /** LAYOUTS */
 /* Sidebar + Main */
 div:has(> aside) {
+  width: 95dvw;
+  margin: auto;
   display: flex;
   gap: 1rem;
 }
 
 div > aside:has(+ main) {
-  width: 250px;
+  /* width: 250px; */
+  flex: 1;
 }
 
 div > aside + main {
-  flex: 1;
+  flex: 3;
 }
 
 /* Readable Column */
