@@ -24,14 +24,14 @@ textarea {
   border: var(--border-style);
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
-  background-color: var(--clr-main-03);
+  background-color: var(--clr-bg); /* TODO: Alt color */
   width: 100%;
   font-size: var(--size-1);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--clr-main-10);
+  color: var(--clr-text); /* TODO: Alt color */
 }
 
 textarea {
@@ -52,7 +52,7 @@ input[type='checkbox'] {
 
   &:checked {
     position: relative;
-    border-color: var(--clr-accent-500);
+    border-color: var(--clr-accent);
     transition: border-color 200ms ease-in-out;
   }
 
@@ -64,7 +64,7 @@ input[type='checkbox'] {
     bottom: var(--checkmark-offset);
     left: var(--checkmark-offset);
     border-radius: var(--checkmark-offset);
-    background-color: var(--clr-accent-500);
+    background-color: var(--clr-accent);
 
     transition-property: all;
     transition-duration: 200ms;

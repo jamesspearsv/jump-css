@@ -1,7 +1,7 @@
 /** Navigation */
 nav {
   width: 100%;
-  background-color: var(--clr-main-04);
+  background-color: var(--clr-bg);
   padding: var(--spacing-1);
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@ nav a:hover::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--clr-accent-500);
+  background-color: var(--clr-accent);
   height: 2px;
   transition: width 200ms ease-in-out;
 
@@ -82,7 +82,7 @@ dialog > article {
   padding: var(--spacing-1);
   border: none;
   border-radius: var(--border-radius);
-  background-color: var(--clr-main-03);
+  background-color: var(--clr-bg);
 
   max-width: var(--content-width);
   overflow: auto;
@@ -93,7 +93,7 @@ dialog > article > button[type='reset'] {
   top: var(--size-0);
   right: var(--spacing-0);
   background-color: transparent;
-  color: var(--clr-main-04);
+  color: var(--clr-text);
 }
 
 dialog > article > button[type='reset']:hover {
@@ -121,7 +121,7 @@ dialog > article > button[type='reset']::after {
 
 /** CARDS */
 article {
-  background-color: var(--clr-main-03);
+  background-color: var(--clr-bg); /* TODO: Alt color */
   padding: 1rem 1.25rem;
   border-radius: var(--border-radius);
   border: var(--border-style);

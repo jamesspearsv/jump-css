@@ -11,9 +11,16 @@
   --clr-danger: #f03e3e;
   --clr-success: #2f9e44;
 
+  /* TODO: Add alt colors */
+  /* 
+  - [] bg alt
+  - [] text alt
+  - [] accent alt
+  */
+
   @media (prefers-color-scheme: dark) {
     --clr-bg: var(--clr-dark);
-    --clr-text: var(--clr-light;
+    --clr-text: var(--clr-light);
   }
 
   /* Color system */
@@ -76,8 +83,8 @@
 
   /** Border & Outline Properties */
   --border-radius: 0.375rem;
-  --border-style: solid 1px var(--clr-main-01);
-  --outline-style: solid 3px var(--clr-accent-500);
+  --border-style: solid 1px var(--clr-bg); /* TODO: Alt color */
+  --outline-style: solid 3px var(--clr-accent);
 }
 
 /* @media (prefers-color-scheme: dark) {

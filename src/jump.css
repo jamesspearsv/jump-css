@@ -23,8 +23,6 @@
 
 body {
   background-color: var(--clr-bg);
-  color: var(--clr-text);
-  backdrop-filter: saturate(0);
 }
 
 /* @media (prefers-color-scheme: dark) {
