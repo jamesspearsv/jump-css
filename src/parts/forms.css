@@ -24,14 +24,14 @@ textarea {
   border: var(--border-style);
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
-  background-color: var(--clr-bg); /* TODO: Alt color */
+  background-color: var(--clr-bg-alt); /* TODO: Alt color */
   width: 100%;
   font-size: var(--size-1);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--clr-text); /* TODO: Alt color */
+  color: var(--clr-text-alt); /* TODO: Alt color */
 }
 
 textarea {

@@ -121,7 +121,7 @@ dialog > article > button[type='reset']::after {
 
 /** CARDS */
 article {
-  background-color: var(--clr-bg); /* TODO: Alt color */
+  background-color: var(--clr-bg-alt); /* TODO: Alt color */
   padding: 1rem 1.25rem;
   border-radius: var(--border-radius);
   border: var(--border-style);

@@ -5,15 +5,17 @@ input[type='submit'] {
   padding-block: var(--spacing-0);
   border-radius: var(--border-radius);
   border: none;
-  color: var(--clr-text);
+  color: var(--clr-light);
   font-size: 1rem;
   background-color: var(--clr-accent);
+
+  transition: background-color 200ms ease-in-out;
 }
 
 button:hover,
 input[type='submit']:hover {
   cursor: pointer;
-  background-color: var(--clr-accent); /* TODO: Alt color */
+  background-color: var(--clr-accent-alt); /* TODO: Alt color */
 }
 
 button[type='reset'] {

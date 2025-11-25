@@ -1,63 +1,23 @@
 :root {
-  /*! TODO: Finish setting up new color system and refactor component parts */
-
   /** Customizable Color Properties */
   --clr-light: #f6f6f7;
   --clr-dark: #1b1b1f;
 
   --clr-bg: var(--clr-light);
+  --clr-bg-alt: color-mix(in srgb, var(--clr-bg), #000000 10%);
   --clr-text: var(--clr-dark);
+  --clr-text-alt: color-mix(in srgb, var(--clr-text), #ffffff 35%);
   --clr-accent: #7950f2;
+  --clr-accent-alt: color-mix(in srgb, var(--clr-accent), #000000 10%);
   --clr-danger: #f03e3e;
   --clr-success: #2f9e44;
 
-  /* TODO: Add alt colors */
-  /* 
-  - [] bg alt
-  - [] text alt
-  - [] accent alt
-  */
-
   @media (prefers-color-scheme: dark) {
     --clr-bg: var(--clr-dark);
+    --clr-bg-alt: color-mix(in srgb, var(--clr-bg), #ffffff 10%);
     --clr-text: var(--clr-light);
+    --clr-text-alt: color-mix(in srgb, var(--clr-text), #000000 45%);
   }
-
-  /* Color system */
-  /* lighter variants */
-  /* --clr-main-04: color-mix(in oklch, var(--clr-main), #ffffff 90%);
-  --clr-main-03: color-mix(in oklch, var(--clr-main), #ffffff 75%);
-  --clr-main-02: color-mix(in oklch, var(--clr-main), #ffffff 60%);
-  --clr-main-01: color-mix(in oklch, var(--clr-main), #ffffff 45%); */
-
-  /* --clr-main-00: var(--clr-main);  */
-
-  /* darker variants */
-  /* --clr-main-10: color-mix(in oklch, var(--clr-main), #000000 20%);
-  --clr-main-20: color-mix(in oklch, var(--clr-main), #000000 35%);
-  --clr-main-30: color-mix(in oklch, var(--clr-main), #000000 50%);
-  --clr-main-40: color-mix(in oklch, var(--clr-main), #000000 65%); */
-
-  @media (prefers-color-scheme: dark) {
-    /* darker variants */
-    /* --clr-main-04: color-mix(in oklch, var(--clr-main), #000000 20%);
-    --clr-main-03: color-mix(in oklch, var(--clr-main), #000000 15%);
-    --clr-main-02: color-mix(in oklch, var(--clr-main), #000000 10%);
-    --clr-main-01: color-mix(in oklch, var(--clr-main), #000000 5%); */
-
-    /* --clr-main-00: var(--clr-main);  */
-
-    /* lighter variants */
-    /* --clr-main-10: color-mix(in oklch, var(--clr-main), #ffffff 45%);
-    --clr-main-20: color-mix(in oklch, var(--clr-main), #ffffff 60%);
-    --clr-main-30: color-mix(in oklch, var(--clr-main), #ffffff 75%);
-    --clr-main-40: color-mix(in oklch, var(--clr-main), #ffffff 90%); */
-  }
-
-  /** Accent color variations */
-  --clr-accent-400: color-mix(in oklch, var(--clr-accent), #ffffff 35%);
-  --clr-accent-500: var(--clr-accent); /* base */
-  --clr-accent-600: color-mix(in oklch, var(--clr-accent), #000000 5%);
 
   /** Font Properties  */
   --weight-normal: 400;
@@ -83,12 +43,6 @@
 
   /** Border & Outline Properties */
   --border-radius: 0.375rem;
-  --border-style: solid 1px var(--clr-bg); /* TODO: Alt color */
+  --border-style: solid 2px var(--clr-bg-alt);
   --outline-style: solid 3px var(--clr-accent);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --border-style: solid 1px var(--clr-main-20);
-  }
-} */
