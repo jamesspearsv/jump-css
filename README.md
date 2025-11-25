@@ -84,10 +84,10 @@ I started Jump.css to build a set of base CSS rules and styles for my hobby and 
 
 Jump.css is minimal and performant and depends on the following technical requirements
 
-| Requirement            | Description                                                   |
-| ---------------------- | ------------------------------------------------------------- |
+| Requirement            | Description                                                    |
+| ---------------------- | -------------------------------------------------------------- |
 | **Element Selectors**  | Styles semantic HTML elements directly, not through classes.   |
-| **Minimal Classes**    | Provides a handful of utility classes for accessibility.  |
+| **Minimal Classes**    | Provides a handful of utility classes for accessibility.       |
 | **Attribute Styling**  | Uses attribute selectors for stateful and interactive styling. |
 | **Custom Properties**  | Enables easy overrides and theming with CSS variables.         |
 | **No Framework Bloat** | Avoids unnecessary CSS and class-based utilities.              |
@@ -107,18 +107,18 @@ A range of shades are available based on `--clr-main` and `--clr-accent`.
 
 ```css
 /* lighter variants */
---clr-main-100: color-mix(in oklch, var(--clr-main), #ffffff 90%);
---clr-main-200: color-mix(in oklch, var(--clr-main), #ffffff 75%);
---clr-main-300: color-mix(in oklch, var(--clr-main), #ffffff 60%);
---clr-main-400: color-mix(in oklch, var(--clr-main), #ffffff 45%);
+--clr-main-04: color-mix(in oklch, var(--clr-main), #ffffff 90%);
+--clr-main-03: color-mix(in oklch, var(--clr-main), #ffffff 75%);
+--clr-main-02: color-mix(in oklch, var(--clr-main), #ffffff 60%);
+--clr-main-01: color-mix(in oklch, var(--clr-main), #ffffff 45%);
 
---clr-main-500: var(--clr-main); /* base */
+--clr-main-00: var(--clr-main); /* base */
 
 /* darker variants */
---clr-main-600: color-mix(in oklch, var(--clr-main), #000000 20%);
---clr-main-700: color-mix(in oklch, var(--clr-main), #000000 35%);
---clr-main-800: color-mix(in oklch, var(--clr-main), #000000 50%);
---clr-main-900: color-mix(in oklch, var(--clr-main), #000000 65%);
+--clr-main-10: color-mix(in oklch, var(--clr-main), #000000 20%);
+--clr-main-20: color-mix(in oklch, var(--clr-main), #000000 35%);
+--clr-main-30: color-mix(in oklch, var(--clr-main), #000000 50%);
+--clr-main-40: color-mix(in oklch, var(--clr-main), #000000 65%);
 ```
 
 Each variant can be used directly and customized by providing a custom value. View the source code for a complete list of derived color properties.

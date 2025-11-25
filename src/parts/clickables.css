@@ -5,7 +5,7 @@ input[type='submit'] {
   padding-block: var(--spacing-0);
   border-radius: var(--border-radius);
   border: none;
-  color: var(--clr-main-100);
+  color: var(--clr-main-04);
   font-size: 1rem;
   background-color: var(--clr-accent-500);
 }
@@ -34,8 +34,8 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   a {
     color: var(--clr-accent-400);
   }
-}
+} */

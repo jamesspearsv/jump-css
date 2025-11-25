@@ -24,14 +24,14 @@ textarea {
   border: var(--border-style);
   padding: var(--spacing-0);
   border-radius: var(--border-radius);
-  background-color: var(--clr-main-200);
+  background-color: var(--clr-main-03);
   width: 100%;
   font-size: var(--size-1);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--clr-main-600);
+  color: var(--clr-main-10);
 }
 
 textarea {
@@ -90,14 +90,14 @@ label > input[type='checkbox'] {
   width: auto;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   input,
   textarea {
-    background-color: var(--clr-main-800);
+    background-color: var(--clr-main-30);
   }
 
   input::placeholder,
   textarea::placeholder {
-    color: var(--clr-main-500);
+    color: var(--clr-main-00);
   }
-}
+} */
