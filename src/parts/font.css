@@ -34,11 +34,11 @@ h6 {
 h4,
 h5,
 h6 {
-  color: var(--clr-text-alt); /* TODO: Alt color */
+  color: var(--clr-text-alt); 
 }
 
 s {
-  color: var(--clr-text-alt); /* TODO: Alt color */
+  color: var(--clr-text-alt);
 }
 
 ins {
@@ -50,7 +50,7 @@ del {
 }
 
 mark {
-  background-color: var(--clr-accent-alt); /* TODO: Alt color */
+  background-color: var(--clr-accent-alt);
   filter: saturate(0.75) brightness(1.75);
   padding: 1px 2px;
   border-radius: 2px;
