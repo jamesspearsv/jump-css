@@ -10,55 +10,63 @@
       .VContainer article {
         height: 50px;
         width: 50px;
-        background-color: var(--clr-accent-500);
-      }
-
-      .HContainer.clr > article {
-        height: auto;
-        width: auto;
-        color: var(--clr-accent-500);
-        padding: 0.375rem;
-        border-radius: 3px;
+        background-color: var(--clr-accent);
       }
 
       main.main-demo {
         padding: var(--spacing-2);
       }
 
-      article.clr-main-100 {
-        background-color: var(--clr-main-100);
+      section.clr {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 0.375rem;
+        border-radius: 3px;
+        margin-bottom: 3rem;
       }
 
-      article.clr-main-200 {
-        background-color: var(--clr-main-200);
+      section.clr > article {
+        position: relative;
+        flex: 1;
       }
 
-      article.clr-main-300 {
-        background-color: var(--clr-main-300);
+      section.clr span {
+        position: absolute;
+        bottom: -2rem;
+        color: var(--clr-text);
       }
 
-      article.clr-main-400 {
-        background-color: var(--clr-main-400);
+      article.clr-bg {
+        background-color: var(--clr-bg);
       }
 
-      article.clr-main-500 {
-        background-color: var(--clr-main-500);
+      article.clr-bg-alt {
+        background-color: var(--clr-bg-alt);
       }
 
-      article.clr-main-600 {
-        background-color: var(--clr-main-600);
+      article.clr-text {
+        background-color: var(--clr-text);
       }
 
-      article.clr-main-700 {
-        background-color: var(--clr-main-700);
+      article.clr-text-alt {
+        background-color: var(--clr-text-alt);
       }
 
-      article.clr-main-800 {
-        background-color: var(--clr-main-800);
+      article.clr-accent {
+        background-color: var(--clr-accent);
       }
 
-      article.clr-main-900 {
-        background-color: var(--clr-main-900);
+      article.clr-accent-alt {
+        background-color: var(--clr-accent-alt);
+      }
+
+      article.clr-danger {
+        background-color: var(--clr-danger);
+      }
+
+      article.clr-success {
+        background-color: var(--clr-success);
       }
     </style>
   </head>
@@ -94,16 +102,15 @@
     <main class="main-demo">
       <section>
         <h1>Colors</h1>
-        <section class="HContainer clr">
-          <article class="clr-main-100">clr-main-100</article>
-          <article class="clr-main-200">clr-main-200</article>
-          <article class="clr-main-300">clr-main-300</article>
-          <article class="clr-main-400">clr-main-400</article>
-          <article class="clr-main-500">clr-main-500</article>
-          <article class="clr-main-600">clr-main-600</article>
-          <article class="clr-main-700">clr-main-700</article>
-          <article class="clr-main-800">clr-main-800</article>
-          <article class="clr-main-900">clr-main-900</article>
+        <section class="clr">
+          <article class="clr-bg"><span> Background </span></article>
+          <article class="clr-bg-alt"><span> Background Alt</span></article>
+          <article class="clr-text"><span> Text </span></article>
+          <article class="clr-text-alt"><span> Text Alt</span></article>
+          <article class="clr-accent"><span> Accent </span></article>
+          <article class="clr-accent-alt"><span> Accent Alt</span></article>
+          <article class="clr-danger"><span> Danger </span></article>
+          <article class="clr-success"><span> Success </span></article>
         </section>
       </section>
 

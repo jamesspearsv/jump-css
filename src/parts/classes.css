@@ -15,11 +15,12 @@ Jump.css can be used purely without any classes. These classes are provided to m
 }
 
 .bg-accent {
-  background-color: var(--clr-accent-500);
+  background-color: var(--clr-accent);
 }
 
 .hoverable:hover {
-  background-color: var(--clr-accent-500);
+  background-color: var(--clr-accent-alt);
+  transition: background-color 200ms ease-in-out;
 }
 
 .focusable:focus-visible {

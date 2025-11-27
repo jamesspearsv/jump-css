@@ -22,11 +22,11 @@
 }
 
 body {
-  background-color: var(--clr-main-100);
+  background-color: var(--clr-bg);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
-    background-color: var(--clr-main-900);
+    background-color: var(--clr-main-40);
   }
-}
+} */
