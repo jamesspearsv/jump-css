@@ -10,6 +10,7 @@
     "CHANGELOG.md"
   ],
   "scripts": {
+    "dev": "live-server",
     "build": "lightningcss --minify --bundle --targets \">= 0.25%\" -o dist/jump.min.css src/jump.css",
     "publish:dry": "pnpm publish --dry-run",
     "publish:dist": "pnpm publish"
