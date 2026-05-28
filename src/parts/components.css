@@ -146,6 +146,5 @@ details {
 }
 
 details[open] > summary {
-    color: rebeccapurple;
     margin-bottom: var(--spacing-0);
 }
