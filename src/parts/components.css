@@ -142,6 +142,7 @@ details {
     padding: var(--spacing-0);
     background-color: var(--clr-bg-alt);
     border-radius: var(--border-radius);
+    cursor: pointer;
 }
 
 details[open] > summary {
