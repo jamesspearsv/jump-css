@@ -95,4 +95,9 @@ Version 0.6.0 adds support for a basic set of utility classes to improve the lib
 ### Fixed
 
 - **Color contrast accessibility** color system problem when switching between light and dark mode
-  
+
+## 0.7.0
+
+### Added
+
+- Added simple dropdown component
